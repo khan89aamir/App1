@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.frmLogin">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+
+            <StackLayout BackgroundColor="Navy" Padding="20">
+                <Label Text="My Application"
+                       TextColor="White"
+                       FontSize="24"
+                       FontFamily="serif"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       />
+            </StackLayout>
+           
+            <StackLayout  VerticalOptions="CenterAndExpand" Margin="0,50,0,0">
+                    <Label Text="Enter User Name" FontSize="18"></Label>
+                <Entry  x:Name="txtUserName" Placeholder="Enter User Name"></Entry>
+                   
+                
+                    <Label Margin="0,20,0,0" Text="Enter Password" FontSize="18"></Label>
+                    <Entry x:Name="txtPassword" Placeholder="Enter Password" IsPassword="True"></Entry>
+                   
+                <Button CornerRadius="20"  BackgroundColor="#754435" TextColor="White" Text="Login" Clicked="Button_Clicked"></Button>
+                </StackLayout>
+            <Label x:Name="lblTest" Text="123" FontSize="30" TextColor="Red"></Label>
+            <StackLayout BackgroundColor="LightGray" VerticalOptions="EndAndExpand" Padding="5">
+                <Label Text="Copyright 2021, All right reserved" TextColor="Black" HorizontalOptions="Center"></Label>
+            </StackLayout>
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
